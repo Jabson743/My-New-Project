@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    color: red;
+}
+.text-title{
+    font-size: 30px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+#profile-img{
+    border: 10px solid tomato;
+    border-style: dotted;
+    border-radius: 50%;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+ul{
+    font-size: 28px;
+}
+h3{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+}
+table, th, td{
+    border: 2px solid black;
+}
+p{
+    text-align: center;
+    color: blue;
+    font-size: 35px;
+}
+label{
+    color: blue;
+}
+
+.submit{
+    padding: 20px;
+}
+.brand{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.car{
+    margin-left: 30px;
+}

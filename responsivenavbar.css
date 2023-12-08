@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 20px;
+    color: white;
+}
+.nav-bar a{
+    color: white;
+}
+.logo{
+    font-size: 20px;
+    font-family: cursive;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+.menu li{
+    list-style: none;
+    padding: 5px 10px;
+}
+.menu li a{
+    text-decoration: none;
+}
+.product{
+    position: relative;
+}
+.product-dropdown{
+    position: absolute;
+    padding: 1em;
+    background-color: darkblue;
+    display: none;
+    top: 35px;
+}
+.product-dropdown li{
+    text-align: center;
+    width: 8em;
+    padding: 0.5em 1em;
+}
+.product-dropdown li:hover{
+    background-color: rgb(1, 139, 139);
+}
+.product:hover .product-dropdown{
+    display: block;
+}
+/* RESPONSIVE STARTS HERE */
+input{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+}
+@media only screen and (max-width: 768px) {
+    .menu{
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: blue;
+        text-align: center;
+    }
+    .menu li + li{
+        margin-top: 12px;
+    }
+    .menu li:hover{
+        display: inline-block;
+        transition: 0.5s ease;
+    }
+    input:checked ~ .menu{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    .product-dropdown{
+        right: 50px;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    .product-dropdown li:hover{
+        background-color: blue;
+    }
+}
